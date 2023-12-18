@@ -5,6 +5,7 @@ const Schema = mongoose.Schema;
 const CategorySchema = new Schema({
   id: {
     type: Schema.Types.ObjectId,
+    ref: "User"
   },
   name: {
     type: String,
